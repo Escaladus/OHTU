@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Kontrollerit.Lisaa_Asiakas_Controller">
+   <children>
+      <Pane layoutX="102.0" layoutY="51.0" prefHeight="599.0" prefWidth="324.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+         <children>
+            <VBox layoutX="42.0" layoutY="26.0" prefHeight="477.0" prefWidth="240.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="tf_etunimi" promptText="Etunimi" />
+                  <TextField fx:id="tf_sukunimi" layoutX="10.0" layoutY="20.0" promptText="Sukunimi" />
+                  <HBox prefHeight="15.0" prefWidth="196.0" spacing="30.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <RadioButton fx:id="rb_henkilo" mnemonicParsing="false" text="Henkilö" />
+                        <RadioButton fx:id="rb_yritys" mnemonicParsing="false" text="Yritys" />
+                        <RadioButton fx:id="rb_yhteiso" mnemonicParsing="false" text="Yhteisö" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="tf_yritys" promptText="Yrityksen nimi" />
+                  <TextField fx:id="tf_y_tunnus" promptText="Y-Tunnus" />
+                  <TextField fx:id="tf_yhteiso" promptText="Yhteisön nimi" />
+                  <TextField fx:id="tf_lahiosoite" layoutX="10.0" layoutY="65.0" promptText="Lähiosoite" />
+                  <TextField fx:id="tf_paikkakunta" layoutX="10.0" layoutY="110.0" promptText="Paikkakunta" />
+                  <TextField fx:id="tf_postinumero" layoutX="10.0" layoutY="155.0" promptText="Postinumero" />
+                  <TextField fx:id="tf_puhelin" layoutX="10.0" layoutY="200.0" promptText="Puhelin" />
+                  <TextField fx:id="tf_email" layoutX="10.0" layoutY="245.0" promptText="Email" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="btn_tallenna" layoutX="42.0" layoutY="534.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="79.0" text="Tallenna" />
+            <Button fx:id="btn_peruuta" layoutX="162.0" layoutY="534.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="79.0" text="Peruuta" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

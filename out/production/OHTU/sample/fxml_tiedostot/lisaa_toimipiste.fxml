@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Kontrollerit.Lisaa_Toimipiste_Controller">
+    <children>
+        <Pane layoutX="102.0" layoutY="51.0" prefHeight="599.0" prefWidth="324.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+            <children>
+                <VBox layoutX="42.0" layoutY="26.0" prefHeight="477.0" prefWidth="240.0" spacing="20.0">
+                    <children>
+                        <TextField fx:id="tf_nimi" promptText="Nimi" />
+                        <TextField fx:id="tf_lahiosoite" layoutX="10.0" layoutY="65.0" promptText="Lähiosoite" />
+                        <TextField fx:id="tf_paikkakunta" layoutX="10.0" layoutY="110.0" promptText="Paikkakunta" />
+                        <TextField fx:id="tf_postinumero" layoutX="10.0" layoutY="155.0" promptText="Postinumero" />
+                    </children>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                </VBox>
+                <Button fx:id="btn_tallenna" layoutX="42.0" layoutY="534.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="79.0" text="Tallenna" />
+                <Button fx:id="btn_peruuta" layoutX="162.0" layoutY="534.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="79.0" text="Peruuta" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

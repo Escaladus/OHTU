@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bp_paanakyma" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Kontrollerit.Valikko_Controller">
+   <left>
+      <VBox prefHeight="845.0" prefWidth="203.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_aloitus" mnemonicParsing="false" onMouseClicked="#aloitus_nakyma" prefHeight="73.0" prefWidth="205.0" text="Aloitus" />
+            <Button fx:id="btn_varaus" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#varaus_nakyma" prefHeight="73.0" prefWidth="205.0" text="Varaus" />
+            <Button fx:id="btn_asiakashallinta" layoutX="10.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#asiakashallinta_nakyma" prefHeight="73.0" prefWidth="205.0" text="Asiakashallinta" />
+            <Button fx:id="btn_toimisto" layoutX="10.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#toimisto_nakyma" prefHeight="73.0" prefWidth="205.0" text="Toimisto" />
+            <Button fx:id="btn_toimipiste" layoutX="10.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#toimipiste_nakyma" prefHeight="73.0" prefWidth="205.0" text="Toimipiste" />
+            <Button fx:id="btn_laskutus" layoutX="10.0" layoutY="302.0" mnemonicParsing="false" onMouseClicked="#laskutus_nakyma" prefHeight="73.0" prefWidth="205.0" text="Laskutus" />
+            <Button fx:id="btn_raportointi" layoutX="10.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#raportointi_nakyma" prefHeight="73.0" prefWidth="205.0" text="Raportointi" />
+            <VBox alignment="BOTTOM_LEFT" prefHeight="278.0" prefWidth="203.0">
+               <children>
+                  <Button fx:id="btn_kirjaudu_ulos" layoutX="10.0" layoutY="448.0" mnemonicParsing="false" onMouseClicked="#kirjautuminen_nakyma" prefHeight="73.0" prefWidth="205.0" text="Kirjaudu ulos" />
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="paanakyma" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
